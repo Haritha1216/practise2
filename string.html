@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRAYS & STRINGS</title>
+</head>
+<body>
+    <h1>ARRAY METHODS</h1>
+    <h2>Present array:["Banana", "Orange", "Apple", "Mango"]</h2>
+    <h1>1.toString() method:</h3>
+    <h3 id="sort"></h3>
+    <h1>2.join() method:</h1>
+    <h3 id="join"></h3>
+    <h1>3.push() method:</h1>
+    <h3>After pushing the element:</h3>
+    <h3 id="push"></h3>
+    <h1>4.pop() method:</h1>
+    <h3>After poping the element:</h3>
+    <h3 id="pop"></h3>
+    <h1>STRING METHODS</h1>
+    <h1>1.Combining two strings</h1>
+    <h3 id="concat"></h3>
+    <h1>2.Length of the string "EDUCATION"</h1>
+    <h3 id="len"></h3>
+
+  <script>
+      const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("sort").innerHTML = fruits.toString();
+        document.getElementById("join").innerHTML = fruits.join(" - ");
+        fruits.pop();
+        document.getElementById("pop").innerHTML = fruits;
+        fruits.push("mango");
+        fruits.push("Kiwi");
+        document.getElementById("push").innerHTML = fruits;
+        let a1 = "School"; 
+        let a2 = 'college'; 
+        document.getElementById("concat").innerHTML =a1 + " " +a2;
+        let text = "EDUCATION";
+        document.getElementById("len").innerHTML = text.length;
+        
+  </script>
+</body>
+</html>

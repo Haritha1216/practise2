@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Elements</title>
+</head>
+<h2>JavaScript Using HTML DOM Elements</h2>
+
+<form id="frm1" action="index.html">
+  First name: <input type="text" name="First Name" value="BONALA"><br>
+  Last name: <input type="text" name="Last Name" value="HARITHA"><br><br>
+  <input type="submit" value="Submit">
+</form>
+<p>It will redirect to the form login page</p>
+<body>
+  <div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+style="background-color:#17eed1;width:100px;height:20px;padding:100px;">
+Click Me!!</div>
+<script>
+  function mOver(obj) {
+    obj.innerHTML = "Thank You"
+  }
+  
+  function mOut(obj) {
+    obj.innerHTML = "Click Me!!"
+  }
+  </script>
+</body>
+</html>
